@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>葛飞的简历</title>
+    <style>
+        * {
+            margin: 0;padding: 0;box-sizing: border-box;
+        }
+        html {
+            height: 100%;
+            overflow: hidden;
+        }
+        body {
+            perspective: 2000px;
+            overflow: hidden;
+        }
+        .talcal {
+            position: fixed;
+            right: 100px;
+            top: 100px;
+        }
+        
+    </style>
+</head>
+<body>
+    <style id="style"></style>
+    <div id="htmlBox" class="htmlWrapper"></div>
+    <div class="talcal"></div>
+    <style>
+        @media (max-width: 500px) {
+            .htmlWrapper {
+                width: auto;
+                height: 45vh;
+                overflow: hidden;
+                transform: none;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+            .talcal {
+                position: relative;
+                top: 0;
+                right: 0;
+                margin: auto;
+            }
+        }
+    </style>
+    <script src="./main.js"></script>
+</body>
+</html>
